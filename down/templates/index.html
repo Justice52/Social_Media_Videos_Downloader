@@ -1,0 +1,216 @@
+{% load static %}
+<!doctype html>
+<html lang="en-US">
+<title>JustPro</title>
+<head>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://x2shorts.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.5.1' media='all' />
+<link rel='stylesheet' id='aiodl-default-style-css' href='https://x2shorts.com/wp-content/themes/aiodl-default/style.css?ver=1.2.7' media='all' />
+<link rel="alternate" type="application/json+oembed" href="https://x2shorts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fx2shorts.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://x2shorts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fx2shorts.com%2F&#038;format=xml" />
+<meta name="google-site-verification" content="tCHLj2Gpb9ddYLIHNL_Fd5IUEnE-ut7YP4f4R4li5v0" />
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L84F8Y8J5B');
+</script>
+		<style id="wp-custom-css">
+			figure {
+    margin: 0 0 1rem;
+    max-width: 100%!important;
+}		</style>
+		</head>
+
+<body class="home page-template-default page page-id-8">
+    <nav class="navbar navbar-light navbar-expand-lg" id="header">
+        <div class="container-fluid">
+            <a class="navbar-brand h4 text-decoration-none" href="#"> JUSTPRO </a>
+            <div class="d-lg-none">
+                <button class="btn btn-sm navbar-burger">
+                    <svg class="d-block" width="16" height="16" viewBox="0 0 20 20" xmlns="#">
+                        <title>Mobile Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse"><ul id="header-menu" class="navbar-nav ms-auto me-4" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li  id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active header-menu menu-item-34 nav-item"><a itemprop="url" href="" class="nav-link" aria-current="page"><span itemprop="name">Youtube Video &#038; Shorts Video Downloader</span></a></li>
+<li  id="menu-item-55" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children dropdown active header-menu menu-item-55 nav-item"><a href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-55"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-55">
+	<li  id="menu-item-55-en" class="lang-item lang-item-12 lang-item-en current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home header-menu menu-item-55-en nav-item"><a itemprop="url" href="" class="dropdown-item" hreflang="en-US" lang="en-US"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a></li>
+	<li  id="menu-item-55-vi" class="lang-item lang-item-15 lang-item-vi menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-vi nav-item"><a itemprop="url" href="https://x2shorts.com/vi/youtube-shorts-download-vn/" class="dropdown-item" hreflang="vi" lang="vi"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="Tiếng Việt" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Tiếng Việt</span></span></a></li>
+	<li  id="menu-item-55-id" class="lang-item lang-item-20 lang-item-id menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-id nav-item"><a itemprop="url" href="https://x2shorts.com/id/youtube-shorts-download-id/" class="dropdown-item" hreflang="id-ID" lang="id-ID"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAARVBMVEXfAgDPAADskYrvh4Dsd27qa2PoYVi9AADmV03kTULiQzfeMyf2vrryq6ftoJvMGA/8/Pz5+fn39/fz8/Pm5ubg4ODt7u3lScs2AAAAR0lEQVR4AQXBsRGDQBAAMe39e0gcuP86CTEgBSAgIwipzYiMdBmJjITNMJJYd58jhBPf+kEiaCARaFIiWEyA58Gf3bJwI3gBwHkHZeHbupcAAAAASUVORK5CYII=" alt="Bahasa Indonesia" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Bahasa Indonesia</span></span></a></li>
+	<li  id="menu-item-55-hi" class="lang-item lang-item-25 lang-item-hi menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-hi nav-item"><a itemprop="url" href="https://x2shorts.com/hi/youtube-shorts-download-in/" class="dropdown-item" hreflang="hi-IN" lang="hi-IN"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAjVBMVEX/vwD5tADyqQDrnAD95Hr74XP53mr932D83Vj72k7610P61TT30Cn+7aX954zXzpalrbmiq7bnsgD8/Pz9/v6bq9bIzeT29/f09PXk5ea9wt2Bj8OKn8+ElssAcwCIxIhnsmdfrF9XqFdQpFBEn0Q5mDoAIgAAbwCAv4AAGQAAZQB1uHUAVwAARAAANACRhc+AAAAAVElEQVR4AQXBAU4CQRRAsb6db7Jg9P4XlRAIs7YBRCiDJMlrWIkkW99HqPZD9u+cuTh0naLJBV/1Dg6gZQfmXpQknzluN0oS1qx9Lv5IyhjyE08W/yjQDpdmVRfaAAAAAElFTkSuQmCC" alt="हिन्दी" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">हिन्दी</span></span></a></li>
+</ul>
+</li>
+</ul></div>        </div>
+    </nav>
+            <div class="container mt-8">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="mt-8 mb-8 mb-lg-12">
+                        Youtube Video &#038; Shorts Video Downloader
+                    </h1>
+                    <h2 class="lead mb-8 mb-lg-12">
+                        Fast and free all in one video downloader
+                    </h2>
+                    <div class="alert alert-warning" role="alert" id="alert" style="display: none"></div>
+
+                        <!-- Form to receive url -->
+                    <form action="download"  method="post">
+                        {% csrf_token %}
+                    <div class="d-flex flex-wrap" id="download-form">
+                        <input id="video_url" type="url" name="video_url" class="form-control w-100" placeholder="Paste a video URL" aria-label="Paste a video URL" required>
+                        <input id="token" type="hidden" name="token" value="80649937eec58d0e0b7f748d765214bb6ef04c2d0d71cfea859c8bd23ce20f72">
+                        <button class="mt-4 btn btn-primary btn-block me-4"  id="downloadBtn"> Download</button>
+                        </form>
+{#                        <button class="mt-4 btn btn-secondary btn-block me-4" id="pasteBtn">Paste from clipboard</button>#}
+                    </div>
+                    <div class="mt-1"></div>
+                </div>
+                <div class="col-12 col-lg-6 position-relative d-none d-lg-flex"></div>
+            </div>
+        </div>
+        <div class="d-none navbar-menu position-relative">
+        <div class="navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark" style="opacity: 75%;"></div>
+        <nav class="position-fixed top-0 start-0 bottom-0 d-flex flex-column w-75 max-w-sm py-6 px-6 bg-white overflow-auto">
+            <div class="d-flex align-items-center mb-10">
+                <a class="me-auto h4 mb-0 text-decoration-none" href="#">
+                   JUSPRO!               </a>
+                <button class="navbar-close btn-close" type="button" aria-label="Close"></button>
+            </div>
+            <div class="menu-menu-1-container"><ul id="mobile-menu" class="nav flex-column" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active mobile-menu menu-item-34 nav-item"><a itemprop="url" href="https://x2shorts.com/" class="nav-link" aria-current="page"><span itemprop="name">Youtube Video &#038; Shorts Video Downloader</span></a></li>
+<li  class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children dropdown active mobile-menu menu-item-55 nav-item"><a href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-55"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-55">
+	<li  class="lang-item lang-item-12 lang-item-en current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home mobile-menu menu-item-55-en nav-item"><a itemprop="url" href="https://x2shorts.com/" class="dropdown-item" hreflang="en-US" lang="en-US"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a></li>
+	<li  class="lang-item lang-item-15 lang-item-vi menu-item menu-item-type-custom menu-item-object-custom mobile-menu menu-item-55-vi nav-item"><a itemprop="url" href="https://x2shorts.com/vi/youtube-shorts-download-vn/" class="dropdown-item" hreflang="vi" lang="vi"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="Tiếng Việt" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Tiếng Việt</span></span></a></li>
+	<li  class="lang-item lang-item-20 lang-item-id menu-item menu-item-type-custom menu-item-object-custom mobile-menu menu-item-55-id nav-item"><a itemprop="url" href="https://x2shorts.com/id/youtube-shorts-download-id/" class="dropdown-item" hreflang="id-ID" lang="id-ID"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAARVBMVEXfAgDPAADskYrvh4Dsd27qa2PoYVi9AADmV03kTULiQzfeMyf2vrryq6ftoJvMGA/8/Pz5+fn39/fz8/Pm5ubg4ODt7u3lScs2AAAAR0lEQVR4AQXBsRGDQBAAMe39e0gcuP86CTEgBSAgIwipzYiMdBmJjITNMJJYd58jhBPf+kEiaCARaFIiWEyA58Gf3bJwI3gBwHkHZeHbupcAAAAASUVORK5CYII=" alt="Bahasa Indonesia" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Bahasa Indonesia</span></span></a></li>
+	<li  class="lang-item lang-item-25 lang-item-hi menu-item menu-item-type-custom menu-item-object-custom mobile-menu menu-item-55-hi nav-item"><a itemprop="url" href="https://x2shorts.com/hi/youtube-shorts-download-in/" class="dropdown-item" hreflang="hi-IN" lang="hi-IN"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAjVBMVEX/vwD5tADyqQDrnAD95Hr74XP53mr932D83Vj72k7610P61TT30Cn+7aX954zXzpalrbmiq7bnsgD8/Pz9/v6bq9bIzeT29/f09PXk5ea9wt2Bj8OKn8+ElssAcwCIxIhnsmdfrF9XqFdQpFBEn0Q5mDoAIgAAbwCAv4AAGQAAZQB1uHUAVwAARAAANACRhc+AAAAAVElEQVR4AQXBAU4CQRRAsb6db7Jg9P4XlRAIs7YBRCiDJMlrWIkkW99HqPZD9u+cuTh0naLJBV/1Dg6gZQfmXpQknzluN0oS1qx9Lv5IyhjyE08W/yjQDpdmVRfaAAAAAElFTkSuQmCC" alt="हिन्दी" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">हिन्दी</span></span></a></li>
+</ul>
+</li>
+</ul></div><div class="collapse navbar-collapse"><ul id="header-menu" class="navbar-nav ms-auto me-4" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><li  id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item active header-menu menu-item-34 nav-item"><a itemprop="url" href="https://x2shorts.com/" class="nav-link" aria-current="page"><span itemprop="name">Youtube Video &#038; Shorts Video Downloader</span></a></li>
+<li  id="menu-item-55" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children dropdown active header-menu menu-item-55 nav-item"><a href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle" id="menu-item-dropdown-55"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-55">
+	<li  id="menu-item-55-en" class="lang-item lang-item-12 lang-item-en current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home header-menu menu-item-55-en nav-item"><a itemprop="url" href="https://x2shorts.com/" class="dropdown-item" hreflang="en-US" lang="en-US"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">English</span></span></a></li>
+	<li  id="menu-item-55-vi" class="lang-item lang-item-15 lang-item-vi menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-vi nav-item"><a itemprop="url" href="https://x2shorts.com/vi/youtube-shorts-download-vn/" class="dropdown-item" hreflang="vi" lang="vi"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAATlBMVEX+AAD2AADvAQH/eXn+cXL9amr8YmL9Wlr8UlL7TkvoAAD8d0f6Pz/3ODf2Ly/0KSf6R0f6wTv60T31IBz6+jr4+Cv3QybzEhL4bizhAADgATv8AAAAW0lEQVR4AQXBgU3DQBRAMb+7jwKVUPefkQEQTYJqByBENpKUGoZslXoN5LPONH8G9WWZ7pGlOn6XZmaGRce1J/seei4dl+7dPWDqkk7+58e3+igdlySPcYbwBG+lPhCjrtt9EgAAAABJRU5ErkJggg==" alt="Tiếng Việt" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Tiếng Việt</span></span></a></li>
+	<li  id="menu-item-55-id" class="lang-item lang-item-20 lang-item-id menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-id nav-item"><a itemprop="url" href="https://x2shorts.com/id/youtube-shorts-download-id/" class="dropdown-item" hreflang="id-ID" lang="id-ID"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAARVBMVEXfAgDPAADskYrvh4Dsd27qa2PoYVi9AADmV03kTULiQzfeMyf2vrryq6ftoJvMGA/8/Pz5+fn39/fz8/Pm5ubg4ODt7u3lScs2AAAAR0lEQVR4AQXBsRGDQBAAMe39e0gcuP86CTEgBSAgIwipzYiMdBmJjITNMJJYd58jhBPf+kEiaCARaFIiWEyA58Gf3bJwI3gBwHkHZeHbupcAAAAASUVORK5CYII=" alt="Bahasa Indonesia" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">Bahasa Indonesia</span></span></a></li>
+	<li  id="menu-item-55-hi" class="lang-item lang-item-25 lang-item-hi menu-item menu-item-type-custom menu-item-object-custom header-menu menu-item-55-hi nav-item"><a itemprop="url" href="https://x2shorts.com/hi/youtube-shorts-download-in/" class="dropdown-item" hreflang="hi-IN" lang="hi-IN"><span itemprop="name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAjVBMVEX/vwD5tADyqQDrnAD95Hr74XP53mr932D83Vj72k7610P61TT30Cn+7aX954zXzpalrbmiq7bnsgD8/Pz9/v6bq9bIzeT29/f09PXk5ea9wt2Bj8OKn8+ElssAcwCIxIhnsmdfrF9XqFdQpFBEn0Q5mDoAIgAAbwCAv4AAGQAAZQB1uHUAVwAARAAANACRhc+AAAAAVElEQVR4AQXBAU4CQRRAsb6db7Jg9P4XlRAIs7YBRCiDJMlrWIkkW99HqPZD9u+cuTh0naLJBV/1Dg6gZQfmXpQknzluN0oS1qx9Lv5IyhjyE08W/yjQDpdmVRfaAAAAAElFTkSuQmCC" alt="हिन्दी" width="16" height="11" style="width: 16px; height: 11px;" /><span style="margin-left:0.3em;">हिन्दी</span></span></a></li>
+</ul>
+</li>
+<span class="nav-item dropdown mx-8">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://x2shorts.com/wp-content/themes/aiodl-default/assets/icons/translation.svg" height="28" width="28" alt="languages">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="">English</a></li><li><a class="dropdown-item" href="">Tiếng Việt</a></li><li><a class="dropdown-item" href="">Bahasa Indonesia</a></li><li><a class="dropdown-item" href="/">हिन्दी</a></li>
+        </ul></span></ul></div><div class="nav flex-column">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://x2shorts.com/wp-content/themes/aiodl-default/assets/icons/translation.svg" height="28" width="28">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" href="#">English</a></li><li><a class="dropdown-item" href="#">Tiếng Việt</a></li><li><a class="dropdown-item" href="#">Bahasa Indonesia</a></li><li><a class="dropdown-item" href="">हिन्दी</a></li>
+                </ul>
+            </li></div>        </nav>
+    </div>
+</header>    <div class="text-center" id="ad-area-2"></div>
+    <div class="py-0 overflow-hidden" id="result" style="display: none"></div>
+    <main id="primary" class="site-main">
+
+
+
+<section class="py-20">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 mb-12 mb-lg-0">
+                <span class="small text-info fw-bold">How to use?</span>
+                <h2 class="mt-8 mb-10">Free video downloader</h2>
+                <p class="mb-12 lead text-muted">Easy to use, unlimited and free</p>
+                <a class="btn btn-primary" href="#header">Start using</a>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="bg-light rounded px-5 px-lg-10">
+                    <div class="py-8 border-bottom">
+                        <div class="d-flex align-items-end">
+                                <span class="me-6 flex-shrink-0 d-flex justify-content-center align-items-center rounded-circle bg-info text-white"
+                                      style="width: 48px; height: 48px;">1</span>
+                            <div>
+                                <p class="text-muted">Copy shareable video URL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-8 border-bottom">
+                        <div class="d-flex align-items-end">
+                                <span class="me-6 flex-shrink-0 d-flex justify-content-center align-items-center rounded-circle bg-warning text-white"
+                                      style="width: 48px; height: 48px;">2</span>
+                            <p class="text-muted">Paste it into the field above</p>
+                        </div>
+                    </div>
+                    <div class="py-8">
+                        <div class="d-flex align-items-end">
+                                <span class="me-6 flex-shrink-0 d-flex justify-content-center align-items-center rounded-circle bg-danger text-white"
+                                      style="width: 48px; height: 48px;">3</span>
+                            <div>
+                                <p class="text-muted">Click to download button</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="pb-6 pb-lg-10 border-bottom">
+            <div class="d-flex flex-wrap align-items-start justify-content-between">
+                <div class="col-12 col-lg-2 mb-6 mb-lg-0">
+                    <a class="d-inline-block mb-5 h4 text-decoration-none text-muted" href="#">
+                        JUSTPRO                   </a>
+                </div>
+                <div class="col-12 col-lg-auto footer-menu"><ul id="footer-menu" class="row text-center list-unstyled" itemscope itemtype=""><li  id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy footer-menu menu-item-62 col-6 col-md-auto mb-2 mb-md-0"><a itemprop="url" href="" class="text-decoration-none link-dark fw-bold"><span itemprop="name">Privacy Policy</span></a></li>
+<li  id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page footer-menu menu-item-63 col-6 col-md-auto mb-2 mb-md-0"><a itemprop="url" href="" class="text-decoration-none link-dark fw-bold"><span itemprop="name">Contact</span></a></li>
+<li  id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page footer-menu menu-item-64 col-6 col-md-auto mb-2 mb-md-0"><a itemprop="url" href="" class="text-decoration-none link-dark fw-bold"><span itemprop="name">Disclaimer</span></a></li>
+</ul></div>            </div>
+        </div>
+        <div class="mt-8">
+            <div class="row">
+                <p class="col text-muted small">All rights reserved &copy; </p>JUSTPRO
+                <div class="col d-flex justify-content-end"></div>            </div>
+        </div>
+    </div>
+</footer>
+
+<script id='aiodl-default-script-js-extra'>
+var WPURLS = {"siteurl":"https:\/\/x2shorts.com"};
+var LANG_STRINGS = {"share":"Share","clear":"Clear","enterValidUrl":"Please enter a valid URL."};
+</script>
+<script src='https://x2shorts.com/wp-content/themes/aiodl-default/js/main.js?ver=1.2.7' id='aiodl-default-script-js'></script>
+<script type='text/javascript'>
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+</script>
+</body>
+</html>
