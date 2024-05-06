@@ -21,3 +21,4 @@ virtualenv==20.24.6
 virtualenvwrapper-win==1.2.7
 waitress==2.1.2
 Werkzeug==3.0.0
+whitenoise
